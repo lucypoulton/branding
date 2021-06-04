@@ -12,6 +12,16 @@
 .bordered {
 	border: 1px solid var(--colour-dark-grey);
 }
+
+    .colours > div, .greys > div {
+	    padding: 0;
+	    flex-basis: 7em;
+	    font-size: 24px;
+    }
+
+    .colours > div > div {
+	    padding: 5px;
+	    border-radius: 0 0 5px 5px;
 		</style>
 	</head>
 	<body class="bg-dark">
@@ -19,25 +29,28 @@
 		<div class="container">
 			<h1>Colours</h1>
 			<div class="flowbox colours">
-				<div class="bg-red"><h2>Red</h2><h4>#ff9999</h4></div>
-				<div class="bg-yellow"><h2>Yellow</h2><h4>#ffcc99</h4></div>
-				<div class="bg-green"><h2>Green</h2><h4>#99ffcc</h4></div>
-				<div class="bg-cyan"><h2>Cyan</h2><h4>#99ffff</h4></div>
-				<div class="bg-blue"><h2>Blue</h2><h4>#99b8ff</h4></div>
-				<div class="bg-purple"><h2>Purple</h2><h4>#f799ff</h4></div>
-			</div>
-			<div class="flowbox colours">
-				<div class="bg-dark-red"><h4>#b35959</h4></div>
-				<div class="bg-dark-yellow"><h4>#cc8e5c</h4></div>
-				<div class="bg-dark-green"><h4>#59b386</h4></div>
-				<div class="bg-dark-cyan"><h4>#59b3b3</h4></div>
-				<div class="bg-dark-blue"><h4>#5974b3</h4></div>
-				<div class="bg-dark-purple"><h4>#ab59b3</h4></div>
+				<div class="bg-red"><h2>Red</h2>#ff9999
+					<div class="bg-dark-red">#b35959</div>
+				</div>
+				<div class="bg-yellow"><h2>Yellow</h2>#ffcc99
+					<div class="bg-dark-yellow">#cc8e5c</div>
+				</div>
+				<div class="bg-green"><h2>Green</h2>#99ffcc
+					<div class="bg-dark-green">#59b386</div>
+				</div>
+				<div class="bg-cyan"><h2>Cyan</h2>#99ffff
+					<div class="bg-dark-cyan">#59b3b3</div>
+				</div>
+				<div class="bg-blue"><h2>Blue</h2>#99b8ff
+					<div class="bg-dark-blue">#5974b3</div>
+				</div>
+				<div class="bg-purple"><h2>Purple</h2>#f799ff
+				<div class="bg-dark-purple">#ab59b3</div></div>
 			</div>
 			<div class="flowbox greys">
-				<div class="bg-dark bordered"><h2>Dark</h2><h4>#2b2b2b</h4></div>
-				<div class="bg-dark-grey"><h2>Dark Grey</h2><h4>#454545</h4></div>
-				<div class="bg-light-grey"><h2>Light Grey</h2><h4>#999999</h4></div>
+				<div class="bg-dark bordered"><h2>Dark</h2>#2b2b2b</div>
+				<div class="bg-dark-grey"><h2>Dark Grey</h2>#454545</div>
+				<div class="bg-light-grey"><h2>Light Grey</h2>#999999</div>
 				<div class="bg-light"><h2>Light</h2>#ffffff</div>
 			</div>
 			<h1>Typography</h1>
@@ -71,6 +84,7 @@ class HelloWorld {
 					<ion-icon size="large" name="caret-up-circle-outline"></ion-icon>
 				</div>
 			</div>
+			<p class="copyright">Copyright © Lucy Poulton 2021. All rights reserved.</p>
 		</div>
 		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 		<script src="prism.js"></script>

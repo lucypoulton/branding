@@ -21,7 +21,7 @@
 	border-radius: 5px;
 	text-align:center;
 	flex-grow: 1;
-	flex-basis: 0;
+	flex-basis: content;
 }
 
 /*
@@ -37,6 +37,12 @@
 	padding: 1rem;
 	box-shadow: linear-gradient(135deg, rgba(250, 158, 250, 1) 0%, rgba(157, 172, 250, 1) 100%);
 	background-color: #222;
+}
+
+.copyright {
+	color: var(--colour-light-grey);
+	width: 100%;
+	text-align: center;
 }
 
 /* 
