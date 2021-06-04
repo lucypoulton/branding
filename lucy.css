@@ -1,0 +1,178 @@
+/*
+ * TODO copyright notice
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Work+Sans:wght@300&display=swap');
+
+/*
+ * ---
+ * FLOWBOX
+ * ---
+ */
+.flowbox {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.flowbox > div {
+	padding: 0 10px;
+	margin: 5px;
+	border-radius: 5px;
+	text-align:center;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+/*
+ * ---
+ * LAYOUT ELEMENTS
+ * ---
+ */
+.container {
+	margin: 3rem;
+}
+.header {
+	margin: 0;
+	padding: 1rem;
+	box-shadow: linear-gradient(135deg, rgba(250, 158, 250, 1) 0%, rgba(157, 172, 250, 1) 100%);
+	background-color: #222;
+}
+
+/* 
+ * ---
+ * COLOURS
+ * ---
+ */
+
+:root {
+	/* main colours */
+	--colour-red: #ff9999;
+	--colour-yellow: #ffcc99;
+	--colour-green: #99ffcc;
+	--colour-cyan: #99ffff;
+	--colour-blue: #99b8ff;
+	--colour-purple: #f799ff;
+
+	/* dark colours */
+	--colour-dark-red: #b35959;
+	--colour-dark-yellow: #cc8e5c;
+	--colour-dark-green: #59b386;
+	--colour-dark-cyan: #59b3b3;
+	--colour-dark-blue: #5974b3;
+	--colour-dark-purple: #ab59b3;
+
+	/* greyscale */
+	--colour-dark: #2b2b2b;
+	--colour-dark-grey: #454545;
+	--colour-light-grey: #999999;
+	--colour-light: #ffffff;
+}
+
+.bg-red {
+	background-color: var(--colour-red);
+	color: var(--colour-dark);
+}
+
+.bg-yellow {
+	background-color: var(--colour-yellow);
+	color: var(--colour-dark);
+}
+
+.bg-green {
+	background-color: var(--colour-green);
+	color: var(--colour-dark);
+}
+
+.bg-cyan {
+	background-color: var(--colour-cyan);
+	color: var(--colour-dark);
+}
+
+.bg-blue {
+	background-color: var(--colour-blue);
+	color: var(--colour-dark);
+}
+
+.bg-purple {
+	background-color: var(--colour-purple);
+	color: var(--colour-dark);
+}
+
+.bg-dark-red {
+	background-color: var(--colour-dark-red);
+	color: var(--colour-light);
+}
+
+.bg-dark-yellow {
+	background-color: var(--colour-dark-yellow);
+	color: var(--colour-light);
+}
+
+.bg-dark-green {
+	background-color: var(--colour-dark-green);
+	color: var(--colour-light);
+}
+
+.bg-dark-cyan {
+	background-color: var(--colour-dark-cyan);
+	color: var(--colour-light);
+}
+
+.bg-dark-blue {
+	background-color: var(--colour-dark-blue);
+	color: var(--colour-light);
+}
+
+.bg-dark-purple {
+	background-color: var(--colour-dark-purple);
+	color: var(--colour-light);
+}
+
+.bg-dark {
+	background-color: var(--colour-dark);
+	color: var(--colour-light);
+}
+
+.bg-dark-grey {
+	background-color: var(--colour-dark-grey);
+	color: var(--colour-light);
+}
+
+.bg-light-grey {
+	background-color: var(--colour-light-grey);
+	color: var(--colour-dark);
+}
+
+.bg-light {
+	background-color: var(--colour-light);
+	color: var(--colour-dark);
+}
+/* 
+ * ---
+ * FONTS AND TYPOGRAPHY
+ * ---
+ */
+
+.mono, code {
+	font-family: "Roboto Mono", monospace;
+}
+
+code {
+	padding: 6px;
+	border: 2px solid var(--colour-dark-grey);
+	border-radius: 10px;
+	text-align: left;
+	display:inline-block;
+	width:100%;
+}
+
+body {
+	margin: 0;
+	font-family: "Work Sans", sans-serif;
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}

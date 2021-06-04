@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="lucy.css">
+		<link rel="stylesheet" href="prism.css">
+		<meta charset="UTF-8">
+		<style>
+.flowbox {
+	width: 100%;
+}
+
+.bordered {
+	border: 1px solid var(--colour-dark-grey);
+}
+		</style>
+	</head>
+	<body class="bg-dark">
+		<h1 class="header">Lucy's Branding Overview</h1>
+		<div class="container">
+			<h1>Colours</h1>
+			<div class="flowbox colours">
+				<div class="bg-red"><h2>Red</h2><h4>#ff9999</h4></div>
+				<div class="bg-yellow"><h2>Yellow</h2><h4>#ffcc99</h4></div>
+				<div class="bg-green"><h2>Green</h2><h4>#99ffcc</h4></div>
+				<div class="bg-cyan"><h2>Cyan</h2><h4>#99ffff</h4></div>
+				<div class="bg-blue"><h2>Blue</h2><h4>#99b8ff</h4></div>
+				<div class="bg-purple"><h2>Purple</h2><h4>#f799ff</h4></div>
+			</div>
+			<div class="flowbox colours">
+				<div class="bg-dark-red"><h4>#b35959</h4></div>
+				<div class="bg-dark-yellow"><h4>#cc8e5c</h4></div>
+				<div class="bg-dark-green"><h4>#59b386</h4></div>
+				<div class="bg-dark-cyan"><h4>#59b3b3</h4></div>
+				<div class="bg-dark-blue"><h4>#5974b3</h4></div>
+				<div class="bg-dark-purple"><h4>#ab59b3</h4></div>
+			</div>
+			<div class="flowbox greys">
+				<div class="bg-dark bordered"><h2>Dark</h2><h4>#2b2b2b</h4></div>
+				<div class="bg-dark-grey"><h2>Dark Grey</h2><h4>#454545</h4></div>
+				<div class="bg-light-grey"><h2>Light Grey</h2><h4>#999999</h4></div>
+				<div class="bg-light"><h2>Light</h2>#ffffff</div>
+			</div>
+			<h1>Typography</h1>
+			<div class="flowbox">
+				<div>
+					<h2>Work Sans Light 300</h2>
+					<h1 style="margin: 0">h1: 36px</h1>
+					<h2 style="margin: 0">h2: 27px</h2>
+					<p style="margin: 5px">Standard: 18px</p>	
+				</div>
+				<div>
+					<p class="mono">Monospace - Roboto Mono 18px</p>
+					<p>Code blocks higlighted using <a href="https://prismjs.com">Prism</a>
+					<pre><code class="language-java">// 16px font inside code blocks
+class HelloWorld {
+    public static void main(String[] args) {
+	System.out.println("Hello, World!"); 
+    }
+}</code></pre>
+				</div>
+				<div>
+					<h2>Icons</h2>
+					<p>Icons provided by <a href="https://ionic.io/ionicons">Ionicons</a></p>
+					<ion-icon size="large" name="folder-outline"></ion-icon>
+					<ion-icon size="large" name="remove-circle-outline"></ion-icon>
+					<ion-icon size="large" name="albums-outline"></ion-icon>
+					<p>Use outline icons or filled to highlight</p>
+					<ion-icon size="large" name="caret-back-circle-outline"></ion-icon>
+					<ion-icon size="large" name="caret-down-circle-outline"></ion-icon>
+					<ion-icon size="large" name="caret-forward-circle"></ion-icon>
+					<ion-icon size="large" name="caret-up-circle-outline"></ion-icon>
+				</div>
+			</div>
+		</div>
+		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+		<script src="prism.js"></script>
+	</body>
+</html>
