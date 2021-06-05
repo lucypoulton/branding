@@ -4,6 +4,7 @@
 		<link rel="stylesheet" href="lucy.css">
 		<link rel="stylesheet" href="prism.css">
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
 		<style>
 .flowbox {
 	width: 100%;
@@ -16,16 +17,17 @@
     .colours > div, .greys > div {
 	    padding: 0;
 	    flex-basis: 7em;
-	    font-size: 24px;
+	    font-size: 1.4em;
     }
 
     .colours > div > div {
-	    padding: 5px;
-	    border-radius: 0 0 5px 5px;
+	    padding: 0.25em;
+	    border-radius: 0 0 0.25em 0.25em;
+    }
 		</style>
 	</head>
 	<body class="bg-dark">
-		<h1 class="header">Lucy's Branding Overview</h1>
+		<div class="header">Lucy's Branding Overview</div>
 		<div class="container">
 			<h1>Colours</h1>
 			<div class="flowbox colours">
@@ -57,14 +59,14 @@
 			<div class="flowbox">
 				<div>
 					<h2>Work Sans Light 300</h2>
-					<h1 style="margin: 0">h1: 36px</h1>
-					<h2 style="margin: 0">h2: 27px</h2>
-					<p style="margin: 5px">Standard: 18px</p>	
+					<h1 style="margin: 0">h1 - 2em</h1>
+					<h2 style="margin: 0">h2 - 1.5em</h2>
+					<p style="margin: 5px">Standard: 1.1em</p>	
 				</div>
 				<div>
-					<p class="mono">Monospace - Roboto Mono 18px</p>
+					<p class="mono">Monospace - Roboto Mono 1.1em</p>
 					<p>Code blocks higlighted using <a href="https://prismjs.com">Prism</a>
-					<pre><code class="language-java">// 16px font inside code blocks
+					<pre><code class="language-java">// Java hello world
 class HelloWorld {
     public static void main(String[] args) {
 	System.out.println("Hello, World!"); 

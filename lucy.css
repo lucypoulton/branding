@@ -16,12 +16,13 @@
 }
 
 .flowbox > div {
-	padding: 0 10px;
-	margin: 5px;
-	border-radius: 5px;
+	padding: 0 0.5em;
+	margin: 0.2em;
+	border-radius: 0.25em;
 	text-align:center;
 	flex-grow: 1;
 	flex-basis: content;
+	max-width: 100%;
 }
 
 /*
@@ -30,13 +31,18 @@
  * ---
  */
 .container {
-	margin: 3rem;
+	margin: 3em;
 }
 .header {
 	margin: 0;
-	padding: 1rem;
+	padding: 1em;
 	box-shadow: linear-gradient(135deg, rgba(250, 158, 250, 1) 0%, rgba(157, 172, 250, 1) 100%);
 	background-color: #222;
+}
+
+.header, .header-text {
+	font-size: 2.0em;
+	text-align: center;
 }
 
 .copyright {
@@ -160,23 +166,31 @@
  * ---
  */
 
+:root {
+	font-size: 1em
+}
+
 .mono, code {
 	font-family: "Roboto Mono", monospace;
 }
 
 code {
-	padding: 6px;
+	padding: 0.5em;
 	border: 2px solid var(--colour-dark-grey);
-	border-radius: 10px;
+	border-radius: 0.5em;
 	text-align: left;
 	display:inline-block;
-	width:100%;
+}
+
+pre {
+	overflow-x: auto;
+	max-width: 100%;
 }
 
 body {
 	margin: 0;
 	font-family: "Work Sans", sans-serif;
-	font-size: 18px;
+	font-size: 1.1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
