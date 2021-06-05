@@ -36,7 +36,7 @@
 .header {
 	margin: 0;
 	padding: 1em;
-	box-shadow: linear-gradient(135deg, rgba(250, 158, 250, 1) 0%, rgba(157, 172, 250, 1) 100%);
+	box-shadow: #3335 0 0 5px;
 	background-color: #222;
 }
 
